@@ -39,14 +39,14 @@ const routes: Routes = [
       // },
       {
         path: '',
-        redirectTo: '/tabs/nearby',
+        redirectTo: 'nearby',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/nearby',
+    redirectTo: 'tabs/nearby',
     pathMatch: 'full'
   }
 ];

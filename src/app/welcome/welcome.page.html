@@ -1,0 +1,64 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-thumbnail style="margin-top: 72px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ_VobnFPO2tceji-bnYt18d670Z7WnxNzsA&usqp=CAU">
+  </ion-thumbnail>
+  <ion-text>
+    <h1 style="font-weight: bold;">Welcome to Cüsture</h1>
+    <p style="font-weight: lighter; color: gray;">Culture & Arts is something everyone needs from time to time.</p>
+  </ion-text>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button color="orange" expand="block" routerLink="/tabs/events" routerDirection="forward">
+          <ion-label style="font-weight: bold;"> LOG IN </ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button style="--background:#FFDDCC" expand="block">
+          <ion-label style="color: #ff4d00; font-weight: bold;"> REGISTER FOR PERSONAL USE </ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button style="--background:#FFDDCC" expand="block">
+          <ion-label style="color: #ff4d00; font-weight: bold;"> REGISTER AS A BUSINESS </ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="orange" expand="block" fill="clear">
+          <ion-icon name="stopwatch-outline" style="padding-right: 16px;"></ion-icon>
+          <ion-label> CONTINUE AS GUEST </ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-text class="ion-text-center" style="color: gray;">
+    <p style="font-size: small;">By creating new account, you agree to our <br> Terms of service & Privacy Policy</p>
+    <p style="padding-top: 48px;">Or log in with</p>
+  </ion-text>
+
+  <ion-grid>
+    <ion-row class="ion-justify-content-evenly">
+      <ion-col offset='1'>
+        <ion-button fill="clear" class="social-logins ion-margin">
+          <ion-icon name="logo-facebook" slot="start"></ion-icon>
+          <ion-label>FaceBook</ion-label>
+        </ion-button>
+
+      <ion-button fill="clear" class="social-logins ion-margin" style="color: red;">
+        <ion-icon name="logo-google" slot="start"></ion-icon>
+        <ion-label>Google</ion-label>
+      </ion-button>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

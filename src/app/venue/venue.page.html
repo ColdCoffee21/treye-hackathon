@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/venues"></ion-back-button>
+    </ion-buttons>
+    <ion-title> {{venue.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-img [src]="venue.imageUrl" style="height: 200px; width: 400px;"></ion-img>
+    <ion-card-content>
+      {{ venue.streetAddress}}, {{ venue.city}}, {{ venue.country}}, {{ venue.zipCode}}
+    </ion-card-content>
+  </ion-card>
+   Which of the following events are you interested in?
+  <ion-list>
+    <ion-item>
+      <ion-label>Historical overview</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Architectural style</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Art style</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+    <ion-label>Exploration</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

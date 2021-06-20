@@ -1,0 +1,21 @@
+.profile-photo{
+  border-radius:50%;
+  size: 2em;
+}
+
+.profile-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.info-square{
+  text-align: center;
+}
+
+
+.more-details{
+  padding-left: 32px;
+}

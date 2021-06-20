@@ -1,0 +1,25 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center" style="font-weight: bold; font-size: x-large;">@Paulina</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <prof-bar></prof-bar>
+  <ion-segment color="danger tint" value="activity">
+    <ion-segment-button value="activity" style="text-transform:none;">
+      Activity
+    </ion-segment-button>
+    <ion-segment-button value="achievements" style="text-transform:none;">
+      Achievements
+    </ion-segment-button>
+  </ion-segment>
+</ion-content>

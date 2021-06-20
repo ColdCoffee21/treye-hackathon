@@ -1,0 +1,56 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+        <ion-icon size="large" slot="start" name="person-circle"></ion-icon>
+      <ion-title size="large" style="text-align: center;">Nearby</ion-title>
+        <ion-icon size="large" slot="end" name="search"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <div  class="map-wrapper" >
+    <div #map id="map" class="map" style="height:300px"></div>
+  </div>
+
+
+
+
+
+
+  <h2>Events in deiner Nähe</h2>
+
+
+
+
+  <ion-row *ngFor="let oneExperience of experiences; let i = index">
+    <ion-col size=3>
+      <p><strong>1,5km</strong></p>
+    </ion-col>
+    <ion-col size=7>
+      <ion-row>
+        <p><strong>{{oneExperience.title}}</strong></p>
+      </ion-row>
+      <ion-row>
+        <ion-col size=12>
+          <p>ab {{oneExperience.startDateTime}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col size=2>
+      <ion-button (click)="toEventDetailPage()" >Los!</ion-button>
+
+    </ion-col>
+
+
+
+   <!-- <img src="{{oneExperience.imageURL}}" style="max-height: 150px;"> -->
+
+
+  </ion-row>
+
+
+
+
+
+</ion-content>

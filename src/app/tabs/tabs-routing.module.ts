@@ -30,6 +30,14 @@ const routes: Routes = [
 
       },
       {
+        path: 'nearby',
+        loadChildren: () => import('../nearby/nearby.module').then( m => m.NearbyPageModule)
+      },
+      // {
+      //   path: 'nearby',
+      //   loadChildren: () => import('src/app/nearby/nearby.module').then( m => m.NearbyPageModule)
+      // },
+      {
         path: '',
         redirectTo: '/tabs/events',
         pathMatch: 'full'

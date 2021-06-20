@@ -22,6 +22,18 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'nearby',
+    loadChildren: () => import('./nearby/nearby.module').then( m => m.NearbyPageModule)
+  },
+  {
+    path: 'event-details',
+    loadChildren: () => import('./event-details/event-details.module').then( m => m.EventDetailsPageModule)
+  },
+  // {
+  //   path: 'nearby',
+  //   loadChildren: () => import('./nearby/nearby.module').then( m => m.NearbyPageModule)
+  // },
   /*{
     path: 'venue',
     loadChildren: () => import('./venue/venue.module').then( m => m.VenuePageModule)

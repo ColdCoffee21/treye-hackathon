@@ -11,10 +11,10 @@ const routes: Routes = [
         path: 'profile',
         loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
       },
-      {
-        path: 'events',
-        loadChildren: () => import('../events/events.module').then(m => m.EventsPageModule)
-      },
+      // {
+      //   path: 'events',
+      //   loadChildren: () => import('../events/events.module').then(m => m.EventsPageModule)
+      // },
       {
         path: 'venues',
         children: [
@@ -39,14 +39,14 @@ const routes: Routes = [
       // },
       {
         path: '',
-        redirectTo: '/tabs/events',
+        redirectTo: '/tabs/nearby',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/events',
+    redirectTo: '/tabs/nearby',
     pathMatch: 'full'
   }
 ];

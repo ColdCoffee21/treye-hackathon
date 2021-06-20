@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 import {HardcodedDAO} from 'src/hardcoded-dao';
 import {db} from 'src/hardcoded-db';
 
@@ -15,7 +16,10 @@ export class EventDetailsPage implements OnInit {
 
   // private readonly _navCtrl: NavController;
 
-  constructor() { }
+  constructor(
+    private navCtrl: NavController,
+
+  ) { }
 
   ngOnInit() {
     this.main();
@@ -23,7 +27,13 @@ export class EventDetailsPage implements OnInit {
 
 
   goBack(){
+    this.navCtrl.navigateBack('/nearby');
 
+  }
+
+
+  goToTour(){
+    this.navCtrl.navigateForward('/tour');
 
   }
 
@@ -32,7 +42,6 @@ export class EventDetailsPage implements OnInit {
     this.experience = await dbDAO.fetchExperiences();
     console.log(this.experience[0])
     console.log(this.experience[0][1])
-
 
     this.venues = await dbDAO.fetchVenues();
     console.log(this.venues[0])

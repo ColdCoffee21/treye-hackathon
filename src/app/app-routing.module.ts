@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'event-details',
     loadChildren: () => import('./event-details/event-details.module').then( m => m.EventDetailsPageModule)
   },
+  {
+    path: 'tour',
+    loadChildren: () => import('./tour/tour.module').then( m => m.TourPageModule)
+  },
   // {
   //   path: 'nearby',
   //   loadChildren: () => import('./nearby/nearby.module').then( m => m.NearbyPageModule)

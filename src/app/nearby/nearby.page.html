@@ -18,13 +18,13 @@
 
 
 
-  <h2>Events in deiner Nähe</h2>
+  <h2 style="margin-left: 15px">Events in deiner Nähe</h2>
 
 
 
-
-  <ion-row *ngFor="let oneExperience of experiences; let i = index">
-    <ion-col size=3>
+  <ion-card *ngFor="let oneExperience of experiences; let i = index">
+  <ion-row >
+    <ion-col size=3 style="align-self: center;">
       <p><strong>1,5km</strong></p>
     </ion-col>
     <ion-col size=7>
@@ -32,15 +32,15 @@
         <p><strong>{{oneExperience.title}}</strong></p>
       </ion-row>
       <ion-row>
-        <ion-col size=12>
+        <ion-col size=8>
           <p>ab {{oneExperience.startDateTime}}</p>
+        </ion-col>
+        <ion-col size=4>
+          <ion-button (click)="toEventDetailPage()" >Los!</ion-button>
         </ion-col>
       </ion-row>
     </ion-col>
-    <ion-col size=2>
-      <ion-button (click)="toEventDetailPage()" >Los!</ion-button>
 
-    </ion-col>
 
 
 
@@ -48,7 +48,7 @@
 
 
   </ion-row>
-
+</ion-card>
 
 
 

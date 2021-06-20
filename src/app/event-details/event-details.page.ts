@@ -27,7 +27,7 @@ export class EventDetailsPage implements OnInit {
 
 
   goBack(){
-    this.navCtrl.navigateBack('/nearby');
+    this.navCtrl.back();
 
   }
 

@@ -23,15 +23,6 @@ const routes: Routes = [
     path: 'app',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
-  /*{
-    path: 'profile',
-    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
-  },
-
-  {
-    path: 'nearby',
-    loadChildren: () => import('./nearby/nearby.module').then( m => m.NearbyPageModule)
-  },
   {
     path: 'event-details',
     loadChildren: () => import('./event-details/event-details.module').then( m => m.EventDetailsPageModule)
@@ -40,6 +31,18 @@ const routes: Routes = [
     path: 'tour',
     loadChildren: () => import('./tour/tour.module').then( m => m.TourPageModule)
   },
+  {
+    path: 'nearby',
+    loadChildren: () => import('./nearby/nearby.module').then( m => m.NearbyPageModule)
+  },
+  /*{
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+
+
+
+
   // {
   //   path: 'nearby',
   //   loadChildren: () => import('./nearby/nearby.module').then( m => m.NearbyPageModule)

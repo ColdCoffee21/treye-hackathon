@@ -1,9 +1,57 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/welcome"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
 
+  <ion-row style="margin-top: 144px; margin-left: 114px;">
+    <ion-thumbnail class="ion-padding-left">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ_VobnFPO2tceji-bnYt18d670Z7WnxNzsA&usqp=CAU">
+    </ion-thumbnail>
+    <ion-text class="ion-text-center">
+      <h1> Tr:eye </h1>
+    </ion-text>
+  </ion-row>
+
+  <div class="login-box">
+    <form (ngSubmit)="login()" #registerForm="ngForm">
+
+      <ion-row>
+        <ion-col>
+          <ion-list lines="none">
+
+            <ion-item lines="none" class="ion-padding-top">
+              <ion-input type="text" placeholder="Email" name="email"></ion-input>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-input type="password" placeholder="Password" name="password"></ion-input>
+            </ion-item>
+
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="ion-padding-horizontal">
+          <ion-button color="orange" expand="block" routerLink="/app" routerDirection="forward">
+            <ion-label style="font-weight: bold;"> Login </ion-label>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="ion-padding-horizontal">
+          <ion-button style="--background:#FFDDCC" expand="block" routerLink="/welcome" routerDirection="back">
+            <ion-label style="color: #ff4d00; font-weight: bold;"> Take me back </ion-label>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+    </form>
+  </div>
 </ion-content>
